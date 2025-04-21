@@ -79,6 +79,16 @@ main {
   color: var(--zinc-600);
 }
 
+/* footer */
+footer p {
+  text-align: center;
+  background-color: var(--purple-200);
+  color: var(--zinc-800);
+}
+
+footer p a {
+  color: var(--zinc-900);
+}
 
 /* Medias queries */
 @media (width < 48rem) {
@@ -140,6 +150,13 @@ main {
   .home .image-home, .home .image-home img {
     width: 30rem;
   }
+
+  
+  .footer p {
+    padding: 0.5rem 0;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
 }
 
 @media (width >= 48rem) and (width < 64rem) {
@@ -200,5 +217,11 @@ main {
 
   .image-home, .image-home img {
     width: 40rem;
+  }
+
+  footer p {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    padding: 1rem 0;
   }
 }
