@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página da Biblioteca Online Pura Vitta" />
+    <link rel="stylesheet" href="./src/styles/reused.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+    <title>Biblioteca Pura Vitta</title>
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <a href="#header" class="logo">
+          <h2>Biblioteca Pura Vitta</h2>
+        </a>
+
+        <nav class="menu">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#bookForm">Cadastro dos Livros</a></li>
+            <li><a href="#listBooks">Lista dos Livros</a></li>
+          </ul>
+        </nav>
+        <button id="mode" class="mode"></button>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <section id="home" class="home">
+          <article class="title">
+            <h1>Biblioteca Pura Vitta</h1>
+            <span>Onde seus sonhos criam assas!</span>
+          </article>
+          <picture class="image-home">
+            <img
+              id="pictureHome"
+              class="pictureHome"
+              src="./src/images/library-dark.svg"
+              alt=""
+            />
+          </picture>
+          <!-- <div class="container">
+            <article class="title">
+              <h1>Biblioteca Pura Vitta</h1>
+              <span>Onde seus sonhos criam assas!</span>
+            </article>
+            <picture class="image-home">
+              <img
+                id="pictureHome"
+                class="pictureHome"
+                src="./src/images/library-dark.svg"
+                alt=""
+              />
+            </picture>
+
+          </div> -->
+        </section>
+
+        <form id="bookForm" class="book-form">
+          <label for="bookName">Nome do Livro</label>
+          <input
+            type="text"
+            id="bookName"
+            placeholder="Digite o nome do livro..."
+          />
+          <label for="bookAuthor">Autor do Livro</label>
+          <input
+            type="text"
+            id="bookAuthor"
+            placeholder="Digite o nome do autor do livro..."
+          />
+          <label for="bookCategory">Categoria do Livro</label>
+          <input
+            type="text"
+            id="bookCategory"
+            placeholder="Digite a categoria do livro..."
+          />
+          <label for="bookYear">Ano de Lançamento</label>
+          <input
+            type="number"
+            id="bookYear"
+            placeholder="Digite o ano de lançamento do livro..."
+          />
+          <label for="bookImage">Capa do Livro</label>
+          <input
+            type="text"
+            id="bookImage"
+            placeholder="Digite o endereço da imagem da capa do livro..."
+          />
+
+          <input
+            type="submit"
+            id="addBook"
+            class="addBook"
+            value="Cadastrar Livro"
+          />
+        </form>
+
+        <section id="listBooks" class="listBooks"></section>
+      </div>
+    </main>
+
+    <script src="./src/scripts/index.js"></script>
+  </body>
+</html>
