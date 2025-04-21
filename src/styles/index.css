@@ -16,6 +16,7 @@
   --zinc-950: #09090b;
 }
 
+
 /* Header */
 header {
   background-color: var(--purple-200);
@@ -55,21 +56,17 @@ header .container, .menu ul  {
 main {
   display: flex;
   align-items: center;
-  max-width: 100%;
-  /* border: 1px solid; */
+  justify-content: center;
 }
 
 /* Home */
 .home  {
   display: flex;
-  /* border: 1px solid; */
   align-items: center;
   max-width: 100%;
 }
-/* 
-.image-home {
-  border: 1px solid;
-} */
+
+
 
 .title h1 {
   color: var(--zinc-800);
@@ -80,6 +77,12 @@ main {
 }
 
 /* footer */
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
 footer p {
   text-align: center;
   background-color: var(--purple-200);
@@ -149,6 +152,7 @@ footer p a {
 
   .home .image-home, .home .image-home img {
     width: 30rem;
+    max-width: 100%;
   }
 
   
@@ -225,3 +229,69 @@ footer p a {
     padding: 1rem 0;
   }
 }
+
+@media (width >= 64rem) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 75rem;
+    padding: 2rem 0;
+  }
+
+  .logo h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .menu ul {
+    gap: 4rem;
+  }
+
+  .menu ul li a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .mode {
+    position: static;
+  }
+
+  main {
+    justify-content: center;
+  }
+  
+  
+  .home {
+    display: flex;
+    gap: 15rem;
+    justify-content: space-between;
+  }
+
+  .title h1 {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .title span {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .image-home {
+    width: 536px;
+    max-width: 1200px;
+  }
+
+  footer p {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    padding: 1.2rem 0;
+  }
+} 

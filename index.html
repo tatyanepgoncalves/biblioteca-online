@@ -27,64 +27,62 @@
     </header>
 
     <main>
-      <div class="container">
-        <section id="home" class="home">
-          <article class="title">
-            <h1>Biblioteca Pura Vitta</h1>
-            <span>Onde seus sonhos criam assas!</span>
-          </article>
-          <picture class="image-home">
-            <img
-              id="pictureHome"
-              class="pictureHome"
-              src="./src/images/library-dark.svg"
-              alt=""
-            />
-          </picture>
-        </section>
+      <section id="home" class="home">
+        <article class="title">
+          <h1>Biblioteca Pura Vitta</h1>
+          <span>Onde seus sonhos criam assas!</span>
+        </article>
+        <picture class="image-home">
+          <img
+            id="pictureHome"
+            class="pictureHome"
+            src="./src/images/library-dark.svg"
+            alt=""
+          />
+        </picture>
+      </section>
+      <form id="bookForm" class="book-form">
+        <label for="bookName">Nome do Livro</label>
+        <input
+          type="text"
+          id="bookName"
+          placeholder="Digite o nome do livro..."
+        />
+        <label for="bookAuthor">Autor do Livro</label>
+        <input
+          type="text"
+          id="bookAuthor"
+          placeholder="Digite o nome do autor do livro..."
+        />
+        <label for="bookCategory">Categoria do Livro</label>
+        <input
+          type="text"
+          id="bookCategory"
+          placeholder="Digite a categoria do livro..."
+        />
+        <label for="bookYear">Ano de Lançamento</label>
+        <input
+          type="number"
+          id="bookYear"
+          placeholder="Digite o ano de lançamento do livro..."
+        />
+        <label for="bookImage">Capa do Livro</label>
+        <input
+          type="text"
+          id="bookImage"
+          placeholder="Digite o endereço da imagem da capa do livro..."
+        />
 
-        <form id="bookForm" class="book-form">
-          <label for="bookName">Nome do Livro</label>
-          <input
-            type="text"
-            id="bookName"
-            placeholder="Digite o nome do livro..."
-          />
-          <label for="bookAuthor">Autor do Livro</label>
-          <input
-            type="text"
-            id="bookAuthor"
-            placeholder="Digite o nome do autor do livro..."
-          />
-          <label for="bookCategory">Categoria do Livro</label>
-          <input
-            type="text"
-            id="bookCategory"
-            placeholder="Digite a categoria do livro..."
-          />
-          <label for="bookYear">Ano de Lançamento</label>
-          <input
-            type="number"
-            id="bookYear"
-            placeholder="Digite o ano de lançamento do livro..."
-          />
-          <label for="bookImage">Capa do Livro</label>
-          <input
-            type="text"
-            id="bookImage"
-            placeholder="Digite o endereço da imagem da capa do livro..."
-          />
+        <input
+          type="submit"
+          id="addBook"
+          class="addBook"
+          value="Cadastrar Livro"
+        />
+      </form>
 
-          <input
-            type="submit"
-            id="addBook"
-            class="addBook"
-            value="Cadastrar Livro"
-          />
-        </form>
+      <section id="listBooks" class="listBooks"></section>
 
-        <section id="listBooks" class="listBooks"></section>
-      </div>
     </main>
 
     <footer class="footer">
