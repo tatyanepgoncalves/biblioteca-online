@@ -1,0 +1,77 @@
+:root {
+  --purple-200: #e9d5ff;
+  --purple-600: #9333ea;
+  --purple-950: #3b0764;
+  --white: #fff;
+  --zinc-50: #fafafa;
+  --zinc-100: #f4f4f5;
+  --zinc-200: #e4e4e7;
+  --zinc-300: #d4d4d8;
+  --zinc-400: #a1a1aa;
+  --zinc-500: #71717a;
+  --zinc-800: #27272a;
+  --zinc-900: #18181b;
+  --zinc-950: #09090b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+
+
+button, .addBook {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Dark e Light */
+body {
+  background-color: var(--zinc-50);
+  color: var(--zinc-950);
+  transition: all 0.5s ease;
+}
+
+body.dark {
+  background-color: var(--zinc-950);
+  color: var(--zinc-100);
+}
+
+.book-id,
+.book-text,
+.book-btns {
+  transition: all 0.3s ease;
+}
+
+body.dark .book-id,
+body.dark .book-text,
+body.dark .book-btns {
+  background-color: var(--zinc-900);
+  color: var(--zinc-100);
+}
+
+body.dark header {
+  background-color: var(--purple-950);
+}
+
+body.dark .logo h2 {
+  color: var(--zinc-50);
+}
+
+body.dark header nav ul li a {
+  color: var(--zinc-100);
+}
+
+body.dark .title h1 {
+  color: var(--zinc-100);
+}
+
+body.dark .title span {
+  color: var(--zinc-300);
+}
