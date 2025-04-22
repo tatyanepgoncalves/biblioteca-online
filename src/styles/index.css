@@ -93,6 +93,46 @@ footer p a {
   color: var(--zinc-900);
 }
 
+/* Book Form */
+.book-form {
+  flex-direction: column;
+  border: 1px solid var(--zinc-500);
+  justify-content: center;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1), 0 4px 4px rgba(0, 0, 0, 0.1),
+  0 2px 2px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.1),
+  inset 0 0 0 1px rgba(255, 255, 255, 0.03),
+  inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.book-form label {
+  color: var(--zinc-700);
+}
+
+.book-form input {
+  outline: none;
+  background-color: transparent;
+  border: 1px solid var(--zinc-600);
+}
+
+.book-form input, .book-form input::placeholder {
+  color: var(--zinc-600);
+}
+
+.book-form .addBook {
+  background-color: var(--purple-200);
+  color: var(--purple-950);
+  transition: all 0.3s ease;
+  border: none;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.book-form .addBook:hover {
+  transform: scale(1.1);
+  background-color: var(--purple-950);
+  color: var(--purple-200);
+}
+
 /* Medias queries */
 @media (width < 48rem) {
   header {
@@ -155,12 +195,41 @@ footer p a {
     max-width: 100%;
   }
 
-  
   .footer p {
     padding: 0.5rem 0;
     font-size: 0.75rem;
     line-height: 1rem;
   }
+
+  .book-form {
+    padding: 1.25rem 2rem;
+    border-radius: 0.5rem;
+    width: 90%;
+    margin-bottom: 4rem;
+  }
+  
+  .book-form label {
+    margin: 1rem 0 0.3rem 0;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .book-form input {
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+  }
+
+  .book-form input, .book-form input::placeholder {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+  }
+
+  .addBook {
+    margin-top: 2rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+
 }
 
 @media (width >= 48rem) and (width < 64rem) {

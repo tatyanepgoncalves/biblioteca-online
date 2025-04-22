@@ -23,8 +23,8 @@
   font-family: "Poppins", sans-serif;
 }
 
-
-button, .addBook {
+button,
+.addBook {
   background-color: transparent;
   border: none;
   cursor: pointer;
@@ -75,3 +75,48 @@ body.dark .title h1 {
 body.dark .title span {
   color: var(--zinc-300);
 }
+
+
+body.dark .book-form {
+  border: 1px solid var(--zinc-600);
+  background-color: var(--zinc-900);
+}
+
+body.dark .book-form label {
+  color: var(--zinc-300);
+}
+
+body.dark .book-form input:nth-child(1),
+body.dark .book-form input:nth-child(2),
+body.dark .book-form input:nth-child(3),
+body.dark .book-form input:nth-child(4),
+body.dark .book-form input:nth-child(5) {
+  border: 1px solid var(--zinc-700);
+}
+
+body.dark .book-form input:nth-child(1),
+body.dark .book-form input:nth-child(2),
+body.dark .book-form input:nth-child(3),
+body.dark .book-form input:nth-child(4),
+body.dark .book-form input:nth-child(5),
+body.dark .book-form input::placeholder {
+  color: var(--zinc-400);
+}
+
+body.dark .book-form .addBook {
+  background-color: var(--purple-950);
+  color: var(--purple-200);
+
+}
+
+body.dark .book-form .addBook:hover {
+  color: var(--purple-950);
+  background-color: var(--purple-200);
+}
+
+body.dark .footer {
+  background-color: var(--purple-950);
+}
+
+
+/* body.dark */
